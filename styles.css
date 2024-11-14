@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  font-family: "Inter", sans-serif;
+}
+a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #000;
+}
+
+h1 {
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.form-inputs {
+  background-color: #ebefff;
+  width: 65%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form-input-inside {
+  background-color: #ebefff;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 150px;
+}
+.socials {
+  margin-top: 70px;
+}
+
+.icons-container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+input {
+  border-radius: 100px;
+  width: 100%;
+  height: 32px;
+  border: none;
+  outline: 4px blue;
+  border: 1px solid #656ed3;
+  padding: 4px;
+  margin-top: 10px;
+}
+label {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: left;
+  font-weight: 400;
+}
+button {
+  width: 100%;
+  margin-top: 20px;
+  height: 32px;
+  background-color: #656ed3;
+  outline: none;
+  border: none;
+  border-radius: 100px;
+  color: #ebefff;
+}
+
+.register {
+  display: block;
+}
+
+.icon {
+  display: inline-block;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+
+.banner {
+  background-color: #afb3ff;
+  width: 35%;
+  position: relative;
+  height: 100vh;
+}
+
+.banner-img {
+  position: absolute;
+  width: 125%;
+  right: 35%;
+  top: 60px;
+}
+
+.design {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+@media (max-width: 1024px) {
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow: hidden;
+  }
+  .form-inputs {
+    width: 100%;
+    overflow: hidden;
+  }
+  .form-input-inside {
+    margin-left: 0;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .banner {
+    display: none;
+  }
+  label {
+    width: 80%;
+  }
+  button {
+    width: 80%;
+  }
+  .design {
+    bottom: -50px;
+    left: -50px;
+  }
+}
